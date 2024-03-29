@@ -22,11 +22,19 @@ if unknown=="Perimeter":
         r_perimeter=2*lb
         print("The perimet of the rectangle is ",r_perimeter)        
 else:
-    unknown_3=input("Which shape's area do you need to find? (Square or Rectangle)")
+    unknown_3=input("Which shape's area do you need to find? (Square, Circle, Triangle or Rectangle)")
     if unknown_3=="Square":
         side=float(input("Enter your side length:"))
         s_area=side*side
         print("The area of the square is ",s_area)
+    elif unknown_3=="Circle":
+        r=float(input("Enter the radius of the circle:"))
+        c_area=(r*r)*3.14
+        print("The area of the circle is ",c_area)
+    elif unknown_3=="Triangle":
+        h=float(input("Enter the height of the triangle:"))
+        base=float(input("Enter the base of the triangle:"))
+        t_area=(h*b)*1/2
     else:
         l=float(input("Enter the length of the rectangle:"))
         b=float(input("Enter the breadth of the rectangle:"))
