@@ -34,7 +34,8 @@ else:
     elif unknown_3=="Triangle":
         h=float(input("Enter the height of the triangle:"))
         base=float(input("Enter the base of the triangle:"))
-        t_area=(h*b)*1/2
+        t_area=(h*base)*1/2
+        print("The area of the triangle is ",t_area)
     else:
         l=float(input("Enter the length of the rectangle:"))
         b=float(input("Enter the breadth of the rectangle:"))
